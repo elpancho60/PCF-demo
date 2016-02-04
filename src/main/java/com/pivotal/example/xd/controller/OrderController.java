@@ -93,6 +93,14 @@ public class OrderController {
         return "WEB-INF/views/pcfdemo.jsp";
     }
 
+    @RequestMapping(value = "/env")
+    public
+    @ResponseBody
+    Map<String, String> showEnvironment() {
+        return System.getenv();
+    }
+
+
     @RequestMapping(value = "/getData")
     public
     @ResponseBody
