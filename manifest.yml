@@ -2,7 +2,7 @@
 applications:
 - name: pcfdemo2
   memory: 300M 
-  instances: 1
+  instances: 2
   host: pcfdemo-rags
   path: ./target/pcfdemo.war
   env:
